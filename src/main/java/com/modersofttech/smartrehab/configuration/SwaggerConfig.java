@@ -1,4 +1,4 @@
-package com.modersofttech.smartrehab.config;
+package com.modersofttech.smartrehab.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
