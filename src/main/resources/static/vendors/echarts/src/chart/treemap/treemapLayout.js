@@ -71,11 +71,11 @@ define(function (require) {
                     leafDepth: seriesOption.leafDepth
                 };
 
-                // layout should be cleared because using updateView but not update.
+                // layouts should be cleared because using updateView but not update.
                 viewRoot.hostTree.clearLayouts();
 
                 // TODO
-                // optimize: if out of view clip, do not layout.
+                // optimize: if out of view clip, do not layouts.
                 // But take care that if do not render node out of view clip,
                 // how to calculate start po
 
@@ -87,7 +87,7 @@ define(function (require) {
                 viewRoot.setLayout(viewRootLayout);
 
                 squarify(viewRoot, options, false, 0);
-                // Supplement layout.
+                // Supplement layouts.
                 var viewRootLayout = viewRoot.getLayout();
                 each(viewAbovePath, function (node, index) {
                     var childValue = (viewAbovePath[index + 1] || viewRoot).getValue();
@@ -247,7 +247,7 @@ define(function (require) {
         // Set area to each child.
         for (var i = 0, len = viewChildren.length; i < len; i++) {
             var area = viewChildren[i].getValue() / info.sum * totalArea;
-            // Do not use setLayout({...}, true), because it is needed to clear last layout.
+            // Do not use setLayout({...}, true), because it is needed to clear last layouts.
             viewChildren[i].setLayout({area: area});
         }
 
@@ -511,7 +511,7 @@ define(function (require) {
     }
 
     // Mark nodes visible for prunning when visual coding and rendering.
-    // Prunning depends on layout and root position, so we have to do it after layout.
+    // Prunning depends on layouts and root position, so we have to do it after layouts.
     function prunning(node, clipRect, viewAbovePath, viewRoot, depth) {
         var nodeLayout = node.getLayout();
         var nodeInViewAbovePath = viewAbovePath[depth];
@@ -528,7 +528,7 @@ define(function (require) {
             // isInView means: viewRoot sub tree + viewAbovePath
             isInView: true,
             // invisible only means: outside view clip so that the node can not
-            // see but still layout for animation preparation but not render.
+            // see but still layouts for animation preparation but not render.
             invisible: !isAboveViewRoot && !clipRect.intersect(nodeLayout),
             isAboveViewRoot: isAboveViewRoot
         }, true);

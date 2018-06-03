@@ -4939,7 +4939,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        uid: null,
 
 	        /**
-	         * Support merge layout params.
+	         * Support merge layouts params.
 	         * Only support 'box' now (left/right/top/bottom/width/height).
 	         * @type {string|Object} Object can be {ignoreSize: true}
 	         * @readOnly
@@ -5517,12 +5517,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * ComponentModel.extend({
 	     *     init: function () {
 	     *         ...
-	     *         var inputPositionParams = layout.getLayoutParams(option);
+	     *         var inputPositionParams = layouts.getLayoutParams(option);
 	     *         this.mergeOption(inputPositionParams);
 	     *     },
 	     *     mergeOption: function (newOption) {
 	     *         newOption && zrUtil.merge(thisOption, newOption, true);
-	     *         layout.mergeLayoutParam(thisOption, newOption);
+	     *         layouts.mergeLayoutParam(thisOption, newOption);
 	     *     }
 	     * });
 	     *
@@ -18880,7 +18880,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this._visual = {};
 
 	        /**
-	         * Globel layout properties.
+	         * Globel layouts properties.
 	         * @type {Object}
 	         * @private
 	         */
@@ -18894,7 +18894,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this._itemVisuals = [];
 
 	        /**
-	         * Item layout properties after layout
+	         * Item layouts properties after layouts
 	         * @type {Array.<Object>}
 	         * @private
 	         */
@@ -19608,7 +19608,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Set layout property.
+	     * Set layouts property.
 	     * @param {string} key
 	     * @param {*} [val]
 	     */
@@ -19625,7 +19625,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get layout property.
+	     * Get layouts property.
 	     * @param  {string} key.
 	     * @return {*}
 	     */
@@ -19634,7 +19634,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get layout of single data item
+	     * Get layouts of single data item
 	     * @param {number} idx
 	     */
 	    listProto.getItemLayout = function (idx) {
@@ -19642,7 +19642,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Set layout of single data item
+	     * Set layouts of single data item
 	     * @param {number} idx
 	     * @param {Object} layout
 	     * @param {boolean=} [merge=false]
@@ -19654,7 +19654,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Clear all layout of single data item
+	     * Clear all layouts of single data item
 	     */
 	    listProto.clearItemLayouts = function () {
 	        this._itemLayouts.length = 0;
@@ -19752,7 +19752,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Shallow clone a new list except visual and layout properties, and graph elements.
+	     * Shallow clone a new list except visual and layouts properties, and graph elements.
 	     * New list only change the indices.
 	     */
 	    listProto.cloneShallow = function () {
@@ -26747,7 +26747,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                rotation: labelRotate
 	            };
 
-	            // Not layout the inside label
+	            // Not layouts the inside label
 	            if (!isLabelInside) {
 	                labelLayoutList.push(layout.label);
 	            }
@@ -28685,7 +28685,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }, this);
 
 	            listComponentHelper.layout(group, legendModel, api);
-	            // Render background after group is layout
+	            // Render background after group is layouts
 	            // FIXME
 	            listComponentHelper.addBackground(group, legendModel);
 	        },
@@ -28777,7 +28777,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	    // List layout
+	    // List layouts
 	    var layout = __webpack_require__(21);
 	    var formatUtil = __webpack_require__(6);
 	    var graphic = __webpack_require__(42);
@@ -28796,7 +28796,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    module.exports = {
 	        /**
 	         * Layout list like component.
-	         * It will box layout each items in group of component and then position the whole group in the viewport
+	         * It will box layouts each items in group of component and then position the whole group in the viewport
 	         * @param {module:zrender/group/Group} group
 	         * @param {module:echarts/model/Component} componentModel
 	         * @param {module:echarts/ExtensionAPI}
@@ -30606,7 +30606,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                if (textAlign === 'middle') {
 	                    textAlign = 'center';
 	                }
-	                // Adjust layout by text align
+	                // Adjust layouts by text align
 	                if (textAlign === 'right') {
 	                    layoutRect.x += layoutRect.width;
 	                }
@@ -33995,7 +33995,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    var mlData = mlModel.getData();
 	                    var fromData = mlModel.__from;
 	                    var toData = mlModel.__to;
-	                    // Update visual and layout of from symbol and to symbol
+	                    // Update visual and layouts of from symbol and to symbol
 	                    fromData.each(function (idx) {
 	                        var lineModel = mlData.getItemModel(idx);
 	                        var mlType = lineModel.get('type');
@@ -34003,7 +34003,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        updateSingleMarkerEndLayout(fromData, idx, true, mlType, valueIndex, seriesModel, api);
 	                        updateSingleMarkerEndLayout(toData, idx, false, mlType, valueIndex, seriesModel, api);
 	                    });
-	                    // Update layout of line
+	                    // Update layouts of line
 	                    mlData.each(function (idx) {
 	                        mlData.setItemLayout(idx, [
 	                            fromData.getItemLayout(idx),
@@ -34049,7 +34049,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                symbolSize = [symbolSize, symbolSize];
 	            }
 
-	            // Update visual and layout of from symbol and to symbol
+	            // Update visual and layouts of from symbol and to symbol
 	            mlData.from.each(function (idx) {
 	                var lineModel = lineData.getItemModel(idx);
 	                var mlType = lineModel.get('type');
@@ -34058,7 +34058,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                updateDataVisualAndLayout(toData, idx, false, mlType, valueIndex);
 	            });
 
-	            // Update visual and layout of line
+	            // Update visual and layouts of line
 	            lineData.each(function (idx) {
 	                var lineColor = lineData.getItemModel(idx).get('lineStyle.normal.color');
 	                lineData.setItemVisual(idx, {
@@ -34470,7 +34470,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 
 	            listComponentHelper.layout(group, toolboxModel, api);
-	            // Render background after group is layout
+	            // Render background after group is layouts
 	            // FIXME
 	            listComponentHelper.addBackground(group, toolboxModel);
 

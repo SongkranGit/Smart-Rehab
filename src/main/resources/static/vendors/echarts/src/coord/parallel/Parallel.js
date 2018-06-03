@@ -288,7 +288,7 @@ define(function(require) {
         },
 
         /**
-         * Get axis layout.
+         * Get axis layouts.
          */
         getAxisLayout: function (dim) {
             return zrUtil.clone(this._axesLayout[dim]);

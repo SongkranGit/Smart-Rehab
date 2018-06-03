@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Smart Rehab </title>
+
+    <!-- Bootstrap -->
+    <link th:href="@{vendors/bootstrap/dist/css/bootstrap.min.css}" href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link th:href="@{vendors/font-awesome/css/font-awesome.min.css}" href="../../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link th:href="@{vendors/nprogress/nprogress.css}" href="../../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link th:href="@{vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css}" href="../../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link th:href="@{vendors/bootstrap-daterangepicker/daterangepicker.css}" href="../../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link th:href="@{css/custom.min.css}" href="../../css/custom.min.css" rel="stylesheet">
+
+</head>
+
+<body class="nav-md">
+<div class="container body">
+    <div class="main_container">
+        <div class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="index.html" class="site_title"><i class="fa fa-wheelchair"></i> <span th:text="#{app.name}"></span></a>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <!-- menu profile quick info -->
+                <div th:replace="fragments/profile :: profile"></div>
+                <!-- /menu profile quick info -->
+
+                <br />
+
+                <!-- sidebar menu -->
+                <div th:replace="fragments/sidebar :: sidebar"></div>
+                <!-- /sidebar menu -->
+
+                <!-- /menu footer buttons -->
+                <div th:replace="fragments/sidebar_footer_button :: sidebar_footer_button"></div>
+
+                <!-- /menu footer buttons -->
+            </div>
+        </div>
+
+        <!-- top navigation -->
+        <div th:replace="fragments/navigation :: navigation"></div>
+
+
+        <!-- page content -->
+        <div class="right_col" role="main" layout:fragment="page_content"></div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+            <div class="pull-right">
+                Created by <a href="https://colorlib.com">Modern Software Technologies</a>
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script th:href="@{vendors/jquery/dist/jquery.min.js}" src="../../vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script th:href="@{vendors/bootstrap/dist/js/bootstrap.min.js}" src="../../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script th:href="@{vendors/fastclick/lib/fastclick.js}" src="../../vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script th:href="@{vendors/nprogress/nprogress.js}" src="../../vendors/nprogress/nprogress.js"></script>
+
+<!-- jQuery Sparklines -->
+<script th:href="@{vendors/jquery-sparkline/dist/jquery.sparkline.min.js}" src="../../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- morris.js -->
+<script th:href="@{vendors/raphael/raphael.min.js}" src="../../vendors/raphael/raphael.min.js"></script>
+<script th:href="@{vendors/morris.js/morris.min.js}" src="../../vendors/morris.js/morris.min.js"></script>
+<!-- gauge.js -->
+<script th:href="@{vendors/gauge.js/dist/gauge.min.js}" src="../../vendors/gauge.js/dist/gauge.min.js"></script>
+<!-- bootstrap-progressbar -->
+<script th:href="@{vendors/bootstrap-progressbar/bootstrap-progressbar.min.js}" src="../../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+<!-- Skycons -->
+<script th:href="@{vendors/skycons/skycons.js}" src="../../vendors/skycons/skycons.js"></script>
+
+<script th:href="@{js/custom.min.js}" src="../../js/custom.min.js"></script>
+
+</body>
+
+</html>

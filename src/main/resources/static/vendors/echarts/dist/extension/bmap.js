@@ -206,7 +206,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var bmap = bmapModel.__bmap;
 
 	            // Set bmap options
-	            // centerAndZoom before layout and render
+	            // centerAndZoom before layouts and render
 	            var center = bmapModel.get('center');
 	            var zoom = bmapModel.get('zoom');
 	            if (center && zoom) {

@@ -1,5 +1,5 @@
 define(function (require) {
-    // List layout
+    // List layouts
     var layout = require('../../util/layout');
     var formatUtil = require('../../util/format');
     var graphic = require('../../util/graphic');
@@ -18,7 +18,7 @@ define(function (require) {
     return {
         /**
          * Layout list like component.
-         * It will box layout each items in group of component and then position the whole group in the viewport
+         * It will box layouts each items in group of component and then position the whole group in the viewport
          * @param {module:zrender/group/Group} group
          * @param {module:echarts/model/Component} componentModel
          * @param {module:echarts/ExtensionAPI}

@@ -86,7 +86,7 @@ define(function (require) {
                             !this._layouting
                                 && this._startForceLayoutIteration(forceLayout, layoutAnimation);
                             forceLayout.setFixed(idx);
-                            // Write position back to layout
+                            // Write position back to layouts
                             data.setItemLayout(idx, el.position);
                         }
                     }, this).on('dragend', function () {

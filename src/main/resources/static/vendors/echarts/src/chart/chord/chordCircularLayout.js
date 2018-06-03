@@ -1,5 +1,5 @@
 /**
- * Chord layout
+ * Chord layouts
  * @module echarts/chart/chord/chordCircularLayout
  * @author pissang(http://github.com/pissang)
  */

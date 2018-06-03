@@ -67,7 +67,7 @@ define(function (require) {
                 forceInstance.step = function (cb) {
                     for (var i = 0, l = nodes.length; i < l; i++) {
                         if (nodes[i].fixed) {
-                            // Write back to layout instance
+                            // Write back to layouts instance
                             vec2.copy(nodes[i].p, graph.getNodeByIndex(i).getLayout());
                         }
                     }
@@ -91,7 +91,7 @@ define(function (require) {
                             }
                             graph.getEdgeByIndex(i).setLayout(points);
                         }
-                        // Update layout
+                        // Update layouts
 
                         cb && cb(stopped);
                     });
@@ -99,7 +99,7 @@ define(function (require) {
                 graphSeries.forceLayout = forceInstance;
                 graphSeries.preservedPoints = preservedPoints;
 
-                // Step to get the layout
+                // Step to get the layouts
                 forceInstance.step();
             }
             else {

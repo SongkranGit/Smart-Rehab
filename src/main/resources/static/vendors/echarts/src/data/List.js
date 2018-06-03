@@ -141,7 +141,7 @@ define(function (require) {
         this._visual = {};
 
         /**
-         * Globel layout properties.
+         * Globel layouts properties.
          * @type {Object}
          * @private
          */
@@ -155,7 +155,7 @@ define(function (require) {
         this._itemVisuals = [];
 
         /**
-         * Item layout properties after layout
+         * Item layouts properties after layouts
          * @type {Array.<Object>}
          * @private
          */
@@ -869,7 +869,7 @@ define(function (require) {
     };
 
     /**
-     * Set layout property.
+     * Set layouts property.
      * @param {string} key
      * @param {*} [val]
      */
@@ -886,7 +886,7 @@ define(function (require) {
     };
 
     /**
-     * Get layout property.
+     * Get layouts property.
      * @param  {string} key.
      * @return {*}
      */
@@ -895,7 +895,7 @@ define(function (require) {
     };
 
     /**
-     * Get layout of single data item
+     * Get layouts of single data item
      * @param {number} idx
      */
     listProto.getItemLayout = function (idx) {
@@ -903,7 +903,7 @@ define(function (require) {
     };
 
     /**
-     * Set layout of single data item
+     * Set layouts of single data item
      * @param {number} idx
      * @param {Object} layout
      * @param {boolean=} [merge=false]
@@ -915,7 +915,7 @@ define(function (require) {
     };
 
     /**
-     * Clear all layout of single data item
+     * Clear all layouts of single data item
      */
     listProto.clearItemLayouts = function () {
         this._itemLayouts.length = 0;
@@ -1013,7 +1013,7 @@ define(function (require) {
     };
 
     /**
-     * Shallow clone a new list except visual and layout properties, and graph elements.
+     * Shallow clone a new list except visual and layouts properties, and graph elements.
      * New list only change the indices.
      */
     listProto.cloneShallow = function () {

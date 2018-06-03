@@ -213,7 +213,7 @@ define(function(require) {
         },
 
         /**
-         * @return {Object} layout
+         * @return {Object} layouts
          */
         getLayout: function () {
             return this.hostTree.data.getItemLayout(this.dataIndex);

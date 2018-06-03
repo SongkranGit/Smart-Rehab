@@ -215,7 +215,7 @@ define(function (require) {
                 rotation: labelRotate
             };
 
-            // Not layout the inside label
+            // Not layouts the inside label
             if (!isLabelInside) {
                 labelLayoutList.push(layout.label);
             }

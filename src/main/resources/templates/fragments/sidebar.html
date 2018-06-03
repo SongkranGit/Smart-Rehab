@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>side bar</title>
+</head>
+<body>
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu" th:fragment="sidebar" >
+    <div class="menu_section">
+        <ul class="nav side-menu">
+            <li><a><i class="fa fa-dashboard"></i> Dashboard </a>
+            <li><a><i class="fa fa-user-md"></i> <span th:text="#{menu.patient_info}"></span> <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="index2.html">Dashboard2</a></li>
+                </ul>
+            </li>
+            <li><a><i class="fa fa-gears"></i><span th:text="#{menu.settings}"></span> <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+                    <li><a href="fixed_footer.html">Fixed Footer</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+</body>
+</html>

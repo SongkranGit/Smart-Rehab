@@ -1,5 +1,5 @@
 // Tests of the scale service
-describe('Test the layout service', function() {
+describe('Test the layouts service', function() {
 	beforeEach(function() {
 		window.addDefaultMatchers(jasmine);
 	});

@@ -212,7 +212,7 @@ define(function(require) {
             handleThumb.position[0] = itemSize[0];
             barGroup.add(handleThumb);
 
-            // Text is always horizontal layout but should not be effected by
+            // Text is always horizontal layouts but should not be effected by
             // transform (orient/inverse). So label is built separately but not
             // use zrender/graphic/helper/RectText, and is located based on view
             // group (according to handleLabelPoint) but not barGroup.

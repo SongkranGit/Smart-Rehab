@@ -79,7 +79,7 @@ define(function(require) {
         uid: null,
 
         /**
-         * Support merge layout params.
+         * Support merge layouts params.
          * Only support 'box' now (left/right/top/bottom/width/height).
          * @type {string|Object} Object can be {ignoreSize: true}
          * @readOnly

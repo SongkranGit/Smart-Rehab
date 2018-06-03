@@ -37,7 +37,7 @@ define(function (require) {
     };
 
     /**
-     * get the layout position of the whole view.
+     * get the layouts position of the whole view.
      */
     function getViewRect(seriesModel, api) {
         return layout.getLayoutRect(

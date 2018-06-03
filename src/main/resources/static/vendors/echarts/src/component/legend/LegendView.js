@@ -142,7 +142,7 @@ define(function (require) {
             }, this);
 
             listComponentHelper.layout(group, legendModel, api);
-            // Render background after group is layout
+            // Render background after group is layouts
             // FIXME
             listComponentHelper.addBackground(group, legendModel);
         },

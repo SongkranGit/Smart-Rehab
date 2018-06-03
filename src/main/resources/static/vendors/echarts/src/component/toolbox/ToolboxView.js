@@ -178,7 +178,7 @@ define(function (require) {
             }
 
             listComponentHelper.layout(group, toolboxModel, api);
-            // Render background after group is layout
+            // Render background after group is layouts
             // FIXME
             listComponentHelper.addBackground(group, toolboxModel);
 

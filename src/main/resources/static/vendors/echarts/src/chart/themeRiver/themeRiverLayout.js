@@ -1,5 +1,5 @@
 /**
- * Transform the raw data to layout information.
+ * Transform the raw data to layouts information.
  */
 define(function (require) {
 
@@ -46,7 +46,7 @@ define(function (require) {
     };
 
     /**
-     * the layout information about themeriver
+     * the layouts information about themeriver
      * @param  {module:echarts/data/List} data
      * @return
      */
@@ -70,7 +70,7 @@ define(function (require) {
         var baseLine = base.y0;
         var ky = height / base.max;
 
-        //set layout information for each item.
+        //set layouts information for each item.
         var n = layerSeries.length;
         var m = layerSeries[0].indices.length;
         var baseY0;

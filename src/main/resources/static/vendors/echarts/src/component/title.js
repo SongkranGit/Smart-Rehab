@@ -152,7 +152,7 @@ define(function(require) {
                 if (textAlign === 'middle') {
                     textAlign = 'center';
                 }
-                // Adjust layout by text align
+                // Adjust layouts by text align
                 if (textAlign === 'right') {
                     layoutRect.x += layoutRect.width;
                 }

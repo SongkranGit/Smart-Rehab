@@ -4927,7 +4927,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        uid: null,
 
 	        /**
-	         * Support merge layout params.
+	         * Support merge layouts params.
 	         * Only support 'box' now (left/right/top/bottom/width/height).
 	         * @type {string|Object} Object can be {ignoreSize: true}
 	         * @readOnly
@@ -5505,12 +5505,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * ComponentModel.extend({
 	     *     init: function () {
 	     *         ...
-	     *         var inputPositionParams = layout.getLayoutParams(option);
+	     *         var inputPositionParams = layouts.getLayoutParams(option);
 	     *         this.mergeOption(inputPositionParams);
 	     *     },
 	     *     mergeOption: function (newOption) {
 	     *         newOption && zrUtil.merge(thisOption, newOption, true);
-	     *         layout.mergeLayoutParam(thisOption, newOption);
+	     *         layouts.mergeLayoutParam(thisOption, newOption);
 	     *     }
 	     * });
 	     *
@@ -18868,7 +18868,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this._visual = {};
 
 	        /**
-	         * Globel layout properties.
+	         * Globel layouts properties.
 	         * @type {Object}
 	         * @private
 	         */
@@ -18882,7 +18882,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this._itemVisuals = [];
 
 	        /**
-	         * Item layout properties after layout
+	         * Item layouts properties after layouts
 	         * @type {Array.<Object>}
 	         * @private
 	         */
@@ -19596,7 +19596,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Set layout property.
+	     * Set layouts property.
 	     * @param {string} key
 	     * @param {*} [val]
 	     */
@@ -19613,7 +19613,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get layout property.
+	     * Get layouts property.
 	     * @param  {string} key.
 	     * @return {*}
 	     */
@@ -19622,7 +19622,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get layout of single data item
+	     * Get layouts of single data item
 	     * @param {number} idx
 	     */
 	    listProto.getItemLayout = function (idx) {
@@ -19630,7 +19630,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Set layout of single data item
+	     * Set layouts of single data item
 	     * @param {number} idx
 	     * @param {Object} layout
 	     * @param {boolean=} [merge=false]
@@ -19642,7 +19642,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Clear all layout of single data item
+	     * Clear all layouts of single data item
 	     */
 	    listProto.clearItemLayouts = function () {
 	        this._itemLayouts.length = 0;
@@ -19740,7 +19740,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Shallow clone a new list except visual and layout properties, and graph elements.
+	     * Shallow clone a new list except visual and layouts properties, and graph elements.
 	     * New list only change the indices.
 	     */
 	    listProto.cloneShallow = function () {
@@ -26735,7 +26735,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                rotation: labelRotate
 	            };
 
-	            // Not layout the inside label
+	            // Not layouts the inside label
 	            if (!isLabelInside) {
 	                labelLayoutList.push(layout.label);
 	            }

@@ -119,7 +119,7 @@ define(function (require) {
                     pts[1][1] = tmp0[1];
                     pts[2][1] = tmp0[2];
                 }
-                // Copy back to layout
+                // Copy back to layouts
                 vec2.copy(linePoints[0], pts[0]);
                 vec2.copy(linePoints[1], pts[2]);
                 vec2.copy(linePoints[2], pts[1]);

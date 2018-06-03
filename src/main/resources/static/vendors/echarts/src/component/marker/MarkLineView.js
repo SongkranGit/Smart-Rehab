@@ -236,7 +236,7 @@ define(function (require) {
                     var mlData = mlModel.getData();
                     var fromData = mlModel.__from;
                     var toData = mlModel.__to;
-                    // Update visual and layout of from symbol and to symbol
+                    // Update visual and layouts of from symbol and to symbol
                     fromData.each(function (idx) {
                         var lineModel = mlData.getItemModel(idx);
                         var mlType = lineModel.get('type');
@@ -244,7 +244,7 @@ define(function (require) {
                         updateSingleMarkerEndLayout(fromData, idx, true, mlType, valueIndex, seriesModel, api);
                         updateSingleMarkerEndLayout(toData, idx, false, mlType, valueIndex, seriesModel, api);
                     });
-                    // Update layout of line
+                    // Update layouts of line
                     mlData.each(function (idx) {
                         mlData.setItemLayout(idx, [
                             fromData.getItemLayout(idx),
@@ -290,7 +290,7 @@ define(function (require) {
                 symbolSize = [symbolSize, symbolSize];
             }
 
-            // Update visual and layout of from symbol and to symbol
+            // Update visual and layouts of from symbol and to symbol
             mlData.from.each(function (idx) {
                 var lineModel = lineData.getItemModel(idx);
                 var mlType = lineModel.get('type');
@@ -299,7 +299,7 @@ define(function (require) {
                 updateDataVisualAndLayout(toData, idx, false, mlType, valueIndex);
             });
 
-            // Update visual and layout of line
+            // Update visual and layouts of line
             lineData.each(function (idx) {
                 var lineColor = lineData.getItemModel(idx).get('lineStyle.normal.color');
                 lineData.setItemVisual(idx, {

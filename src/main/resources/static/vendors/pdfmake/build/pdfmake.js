@@ -2047,7 +2047,7 @@
 	}
 
 	/**
-	 * Executes layout engine for the specified document and renders it into a pdfkit document
+	 * Executes layouts engine for the specified document and renders it into a pdfkit document
 	 * ready to be saved.
 	 *
 	 * @param {Object} docDefinition document definition
@@ -14982,7 +14982,7 @@
 	}
 
 	/**
-	 * Creates an instance of LayoutBuilder - layout engine which turns document-definition-object
+	 * Creates an instance of LayoutBuilder - layouts engine which turns document-definition-object
 	 * into a set of pages, lines, inlines and vectors ready to be rendered into a PDF
 	 *
 	 * @param {Object} pageSize - an object defining page width and height
@@ -15001,7 +15001,7 @@
 	};
 
 	/**
-	 * Executes layout engine on document-definition-object and creates an array of pages
+	 * Executes layouts engine on document-definition-object and creates an array of pages
 	 * containing positioned Blocks, Lines and inlines
 	 *
 	 * @param {Object} docStructure document-definition-object
@@ -15627,7 +15627,7 @@
 
 	/**
 	* Measures all nodes and sets min/max-width properties required for the second
-	* layout-pass.
+	* layouts-pass.
 	* @param  {Object} docStructure document-definition-object
 	* @return {Object}              document-measurement-object
 	*/

@@ -23,8 +23,8 @@ define(function(require) {
          * @override
          */
         getInitialData: function (option, ecModel) {
-            // When both types of xAxis and yAxis are 'value', layout is
-            // needed to be specified by user. Otherwise, layout can be
+            // When both types of xAxis and yAxis are 'value', layouts is
+            // needed to be specified by user. Otherwise, layouts can be
             // judged by which axis is category.
 
             var categories;

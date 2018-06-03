@@ -304,8 +304,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @param {(number|string)} [opt.boundIQR=1.5] Data less than min bound is outlier.
 	     *                          default 1.5, means Q1 - 1.5 * (Q3 - Q1).
 	     *                          If pass 'none', min bound will not be used.
-	     * @param {(number|string)} [opt.layout='horizontal']
-	     *                          Box plot layout, can be 'horizontal' or 'vertical'
+	     * @param {(number|string)} [opt.layouts='horizontal']
+	     *                          Box plot layouts, can be 'horizontal' or 'vertical'
 	     */
 	    return function (rawData, opt) {
 	        opt = opt || [];

@@ -40,7 +40,7 @@ define(function (require) {
             center: ['50%', '50%'],
             radius: ['65%', '75%'],
             //
-            // layout: 'circular',
+            // layouts: 'circular',
 
             sort: 'none',
             sortSub: 'none',

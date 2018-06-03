@@ -291,12 +291,12 @@ define(function(require) {
      * ComponentModel.extend({
      *     init: function () {
      *         ...
-     *         var inputPositionParams = layout.getLayoutParams(option);
+     *         var inputPositionParams = layouts.getLayoutParams(option);
      *         this.mergeOption(inputPositionParams);
      *     },
      *     mergeOption: function (newOption) {
      *         newOption && zrUtil.merge(thisOption, newOption, true);
-     *         layout.mergeLayoutParam(thisOption, newOption);
+     *         layouts.mergeLayoutParam(thisOption, newOption);
      *     }
      * });
      *
